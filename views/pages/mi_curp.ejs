@@ -1,0 +1,25 @@
+<% contentFor ("content") %>
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container">
+            <h1 class="masthead-heading mb-0"><strong>¡Gracias!</strong></h1>
+            <h2 class="masthead-subheading mb-0">Tu RFC se ha generado con exito.</h2>
+        </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+</header>
+<div class="contact-clean">
+    <form method="post">
+        <h2 class="text-center">Información</h2>
+        <div class="form-group"><input class="form-control-plaintext" type="text">
+            <p><strong>Nombre:</strong> <%- name %></p>
+            <p><strong>Apellido Paterno:</strong> <%- apat %></p>
+            <p><strong>Apellido Materno:</strong> <%- amat %></p>
+            <p><strong>Fecha de Nacimiento:</strong> <%- year %>/<%- month %>/<%- day %></p></br >
+            <h2><strong>RFC:</strong> <%- curp %></h2>
+        </div>
+    </form>
+</div>
